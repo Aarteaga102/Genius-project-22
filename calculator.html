@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    body{
+        background-color:rgb(40, 139, 95)
+    }
+    li{
+    border-style: solid;
+    border-color:red;
+    border-width: 1px;
+    display: inline;
+    }
+    .words{
+     color:rgb(170, 170, 10)
+    }
+</style>
+<center><p class="words"><strong><font size="6">Calculator</font></strong></p></center>
+    </head>
+    
+    <body><center>
+<input type="text" name="input1" style="width:50px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+        <!--<option value="%">%</option>-->
+        <option value="sqrt">&radic;</option>
+        <option value="^">^</option>
+    </select>
+    <input type ="text" name="input2" style="width:50px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" />
+
+    <p class="words">The answer is: <span id="display"></span></p>
+    <center><h5 class="words">Note: For the square root function to work there can only be numbers in the first box.</h5></center>
+<script src="calculator.js" ></script>
+
+</center></body>
+</html>
